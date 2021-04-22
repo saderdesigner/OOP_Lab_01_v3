@@ -144,6 +144,13 @@ void DeleteIngredent()
 		}
 	}
 
+	for (auto it = Store::vMeal.begin(); it != Store::vMeal.end(); it++)
+	{
+		if ((*it).hasIngredentName(name)) {
+			(*it).removeDish(name);
+		}
+	}
+
 	Store::vIngredent.erase(it);
 }
 
@@ -158,7 +165,7 @@ void GenerateListIngredent()
 	int qty;
 
 	for (int i = 0; i < 10; i++) {
-		name = "ingredent " + to_string(lastID + i + 1);
+		name = "i" + to_string(lastID + i + 1);
 		qty = rand() % 1000 + 1;
 		w[i] = Ingredent(name, "kg", qty);
 

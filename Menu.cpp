@@ -6,6 +6,8 @@ void ShowMenu() {
 	cout << "CHON MENU" << endl;
 	cout << "1. Ingredent Manager" << endl;
 	cout << "2. Dish Manager" << endl;
+	cout << "3. Order Manager" << endl;
+	cout << "4. Table Manager" << endl;
 
 	cout << "0. Exit" << endl;
 }
@@ -36,6 +38,16 @@ void GenarateMenu() {
 		case 2:
 		{
 			DishManager();
+			break;
+		}
+		case 3:
+		{
+			OrderManager();
+			break;
+		}
+		case 4:
+		{
+			TableManager();
 			break;
 		}
 		case 0:

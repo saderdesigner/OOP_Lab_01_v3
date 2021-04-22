@@ -100,9 +100,9 @@ void Dish::inputAndupdate()
 {
     string name, qty, id;
     
-    cout << "Input Ingredent Information:" << endl;
+    cout << "Input Dish Information:" << endl;
 
-    cout << "Input measuredUnit: " << endl;
+    cout << "Input ID: " << endl;
     cin >> id;
     cin.ignore();
 
